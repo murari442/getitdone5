@@ -1,0 +1,35 @@
+<h3 style="text-align: center">CONTACT</h3><hr>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-6">
+    <div>
+    <form [formGroup]= "ngForm" (ngSubmit)="onSubmitContact(ngForm.value)">
+      <div class="form-group">
+        Name:<input class="form-control" type="text" formControlName="name"placeholder="Your Name" autofocus required>  
+      </div>
+      <div class = "form-group">  
+        Email:<input class="form-control" type="email" formControlName="email" placeholder="Your Email ID" autofocus required>
+      </div>
+      <div class = "form-group">  
+        Phone:<input class="form-control" type="phone" formControlName="phone" placeholder="Your Phone Number" autofocus required>
+      </div>
+      <div class = "form-group">
+        Subject:<input class="form-control" type ="text" formControlName="sub" placeholder="Subject" autofocus required>
+      </div>
+      <div class = "form-group">
+        Message:<textarea class="form-control" rows="5" type="textarea" formControlName="msg" placeholder="Write Message Here..." required></textarea>
+      </div>
+      <div class="form-group"><button class="btn btn-success btn-block" type="submit">Send</button></div>
+    </form>
+    </div>  
+    <!-- <div style="text-align: center;" [hidden] = "!form.submitted"><h3>Thanks for posting your Query! You will get a response ASAP!</h3><a routerLink = "/home" routerLinkActive = "active"><h3>Go Back to Home Page!</h3></a>
+    </div> -->
+  </div>
+  <div class="col-md-3" style="padding: 20px; height:100%; text-align: center;">
+    <h4 style="text-align: center; color: #844622" >CONTACT US</h4><hr>
+    <h5 style="text-align: center; color: #844622" >Phone:</h5>+91-9632264400<hr>
+    <h5 style="text-align: center; color: #844622" >Email:</h5>getitdone442@gmail.com<hr>
+    <h5 style="text-align: center; color: #844622" >Timings:</h5>10am-8pm Daily
+    <hr>
+  </div>
+</div>

@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+.footerlist{
+    font-size: 18px;
+    padding: 5px 0px;
+    margin-left: 5px;
+}
+div{
+    font-family: "Comic Sans MS";
+
+}
