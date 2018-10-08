@@ -18,13 +18,13 @@ export class ContactComponent implements OnInit {
     this._contactService.getContacts()
     .subscribe(resContactData => this.contacts = resContactData);
   }
-  // onSubmitContact(contact: Contact){
+  onSubmitContact(contact: Contact){
     //console.log(contact);
     // this._contactService.addContacts(contact)
     //   .subscribe(resNewContact => {
     //     this.contacts.push(resNewContact);
     //   });
-  // }
+  }
   // private hide: boolean = false;
 
 /*

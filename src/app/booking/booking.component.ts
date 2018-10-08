@@ -18,13 +18,13 @@ export class BookingComponent implements OnInit {
     // this._bookingService.getBookings()
     // .subscribe(resBookingData => this.books = resBookingData);
   }
-  // onSubmitBooking(booking: Booking){
+  onSubmitBooking(booking: Booking){
     //console.log(booking);
     // this._bookingService.addBookings(booking)
     //   .subscribe(resNewBooking => {
     //     this.books.push(resNewBooking);
     //   });
-  // }
+  }
   // private hide: boolean = false;
   
 /*  popUp(){
