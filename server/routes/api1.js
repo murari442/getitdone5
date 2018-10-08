@@ -40,21 +40,21 @@ router.get('/bookings/:id', function(req, res){
     });
 });
 */
-router.post('/booking', function(req, res){
-    console.log('Post a booking');
-    var newBooking = new Booking();
-    newBooking.name = req.body.name;
-    newBooking.email = req.body.email;    
-    newBooking.phone = req.body.phone;    
-    newBooking.add = req.body.add;    
-    newBooking.work = req.body.work;    
-    newBooking.save(function(err, insertedBooking){
-        if(err){
-            console.log("Error inserting booking");
-        }else {
-            res.json(insertedBooking);
-        }
-    });
-});
+// router.post('/booking', function(req, res){
+//     console.log('Post a booking');
+//     var newBooking = new Booking();
+//     newBooking.name = req.body.name;
+//     newBooking.email = req.body.email;    
+//     newBooking.phone = req.body.phone;    
+//     newBooking.add = req.body.add;    
+//     newBooking.work = req.body.work;    
+//     newBooking.save(function(err, insertedBooking){
+//         if(err){
+//             console.log("Error inserting booking");
+//         }else {
+//             res.json(insertedBooking);
+//         }
+//     });
+// });
 
 module.exports = router;

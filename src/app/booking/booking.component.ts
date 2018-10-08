@@ -18,14 +18,14 @@ export class BookingComponent implements OnInit {
     // this._bookingService.getBookings()
     // .subscribe(resBookingData => this.books = resBookingData);
   }
-  onSubmitBooking(booking: Booking){
-    console.log(booking);
+  // onSubmitBooking(booking: Booking){
+    //console.log(booking);
     // this._bookingService.addBookings(booking)
     //   .subscribe(resNewBooking => {
     //     this.books.push(resNewBooking);
     //   });
-  }
-  private hide: boolean = false;
+  // }
+  // private hide: boolean = false;
   
 /*  popUp(){
     window.alert("Thank You!");
