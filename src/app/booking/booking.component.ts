@@ -1,31 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { Booking } from './../Booking';
-import { BookingService } from "../booking.service";
 import { FormGroup, FormControl } from '@angular/forms';
+import { mailer } from "../../../mailer";
 
 @Component({
   selector: 'app-booking',
   templateUrl: './booking.component.html',
-  styleUrls: ['./booking.component.css'],
-  providers: [BookingService]
+  styleUrls: ['./booking.component.css']
 })
 export class BookingComponent implements OnInit {
 
-  books: Array<Booking>;
-  constructor(private _bookingService: BookingService) { }
-
   ngOnInit() {
-    // this._bookingService.getBookings()
-    // .subscribe(resBookingData => this.books = resBookingData);
   }
   onSubmitBooking(booking: Booking){
-    //console.log(booking);
-    // this._bookingService.addBookings(booking)
-    //   .subscribe(resNewBooking => {
-    //     this.books.push(resNewBooking);
-    //   });
-  }
-  // private hide: boolean = false;
+/*     console.log(booking);
+    mailer.mailOptions.text = booking;
+    console.log(mailer.mailOptions.text,mailer.mailer);
+ */    //mailer.mailer();
+ }
+  private hide: boolean = false;
   
 /*  popUp(){
     window.alert("Thank You!");

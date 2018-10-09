@@ -15,11 +15,11 @@ export class ContactComponent implements OnInit {
   constructor(private _contactService: ContactService) { }
 
   ngOnInit() {
-    this._contactService.getContacts()
-    .subscribe(resContactData => this.contacts = resContactData);
+    // this._contactService.getContacts()
+    // .subscribe(resContactData => this.contacts = resContactData);
   }
   onSubmitContact(contact: Contact){
-    //console.log(contact);
+    console.log(contact);
     // this._contactService.addContacts(contact)
     //   .subscribe(resNewContact => {
     //     this.contacts.push(resNewContact);

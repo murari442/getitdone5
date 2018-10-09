@@ -15,8 +15,8 @@ export class ContactService {
   constructor(private _http: HttpClient) { }
 
   getContacts(){
-    return this._http.get<any>(this._getUrl)
-      .pipe(map((response: HttpResponse<any>) => response.body()));
+    // return this._http.get<any>(this._getUrl)
+    //   .pipe(map((response: HttpResponse<any>) => response.body()));
   }
   // addContacts(contact: Contact){
   //   let headers = new Headers({ 'Content-Type': 'application/json'});
